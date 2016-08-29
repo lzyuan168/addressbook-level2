@@ -29,6 +29,11 @@ public class CommandResult {
     /**
      * Returns list of persons relevant to the command command result, if any.
      */
+    
+    public String getFeedbackToUser() {
+        return feedbackToUser;
+    }
+    
     public Optional<List<? extends ReadOnlyPerson>> getRelevantPersons() {
         return Optional.ofNullable(relevantPersons);
     }
