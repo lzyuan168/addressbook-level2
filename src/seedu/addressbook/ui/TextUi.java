@@ -173,7 +173,7 @@ public class TextUi {
     private static String getPrintableString(Printable... printables){
     	final StringBuilder sb = new StringBuilder();
     	for(Printable p: printables) {
-    		sb.append(p.getPrintableString().append(" "))
+    		sb.append(p.getPrintableString().append(" "));
     	}
     	return sb.toString().trim();
     }
